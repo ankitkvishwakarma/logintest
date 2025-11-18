@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: "http://localhost:5000", // tumhara backend
+  baseURL: import.meta.env.VITE_API_URL, // tumhara backend
 });
 
 export default api;
