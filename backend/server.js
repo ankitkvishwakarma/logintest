@@ -14,7 +14,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: process.env.CORS_ORIGIN,
     credentials: true,
   })
 );
@@ -188,7 +188,6 @@ app.post("/reset-password", async (req, res) => {
 app.get("/", (req, res) => {
   res.send("Backend is running...");
 });
-
 
 app.listen(process.env.PORT, () =>
   console.log("Server running on port", process.env.PORT)
