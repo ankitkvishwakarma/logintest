@@ -1,0 +1,66 @@
+# Node modules
+node_modules/
+!*/src/node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+logs/
+*.log
+*.gz
+
+# Environment Variables
+.env
+.env.*
+!.env.example
+
+# Build Output
+dist/
+build/
+out/
+.vite/
+.vite_deps/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE Files
+.vscode/
+.idea/
+*.swp
+
+# Cache Files
+.tmp/
+.temp/
+.cache/
+*.pid
+*.seed
+
+# Coverage
+coverage/
+*.lcov
+
+# Local config
+*.local
+*.sublime-workspace
+*.sublime-project
+
+# Generated Files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# React specific
+*.eslintcache
+*.stylelintcache
+
+# Optional: Avoid uploading backend uploads
+uploads/
+public/uploads/
+
+# Optional: Old ChatGPT or AI files
+__pycache__/
+.sass-cache/
