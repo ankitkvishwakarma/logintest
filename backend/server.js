@@ -104,7 +104,7 @@ app.post("/verify-otp", async (req, res) => {
       otp: String(otp),
       otpExpire: { $gt: new Date() },
     });
-
+    
     if (!user)
       return res.json({ success: false, msg: "Invalid or expired OTP" });
 
