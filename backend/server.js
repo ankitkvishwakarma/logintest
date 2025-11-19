@@ -19,7 +19,7 @@ const app = express();
 //   })
 // );
 
-// app.use(express.json());
+app.use(express.json());
 const allowedOrigins = [
   "http://localhost:5173",
   "https://logintest-theta.vercel.app"  // your Vercel frontend
